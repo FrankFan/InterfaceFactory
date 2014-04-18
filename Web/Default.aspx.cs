@@ -1,4 +1,6 @@
 ﻿using System;
+using IDAL;
+using DALFactory;
 
 
 namespace Web
@@ -7,7 +9,8 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            IOrder order = Access.CreateOrder();
+            Response.Write(order.GetOrder());
         }
     }
 }

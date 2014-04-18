@@ -65,6 +65,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{E7B196C5-299D-482B-9819-F86C933FDDB0}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{9438A53C-303A-4A98-B2FC-247BE456BF00}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
